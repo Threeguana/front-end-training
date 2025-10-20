@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', serif;
+}
+
+/* body */
+body {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* navigasi sidebar */
+.sidebar .nav-link:not(.active):hover {
+    background-color: rgba(44, 171, 250, 0.5);
+}
+
+/* main konten */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(2px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* banner */
+.welcome-banner {
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0.7) 0%,
+        rgba(9, 9, 121, 0.7) 35%,
+        rgba(0, 212, 255, 0.7) 100%
+    );
+    border-radius: 10px;
+}
+
+/* style image */
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.preview-item {
+    width: 150px;
+    height: 150px;
+}
+
+.preview-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}

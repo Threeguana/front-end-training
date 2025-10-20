@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', serif;
+}
+
+body {
+    background-image: url('img/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* agar bg tidak ikut terscroll */
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .nav-link:not(.active):hover {
+    background-color: rgba(253, 13, 13, 0.5);
+}
+
+/* navigasi manage */
+.nav-link.active {
+    background-color: rgba(229, 16, 16, 0.7) !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    position: relative;
+    z-index: 10;
+}
+
+/* dropdown admin */
+.dropdown-menu {
+    border: none !important;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(93, 93, 93, 0.253) !important;
+    color: #fff !important;
+}
+
+.dropdown-item:active {
+    background-color: rgb(154, 1, 1) !important;
+    color: #fff !important;
+}
+
+/* konten utama */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(2px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* banner */
+.welcome-banner {
+    background: linear-gradient(
+        90deg,
+        rgba(36, 0, 0, 0.7) 0%,
+        rgba(131, 79, 16, 0.7) 35%,
+        rgba(186, 14, 14, 0.7) 100%
+    );
+    border-radius: 10px;
+}
